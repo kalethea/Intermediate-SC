@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Skills Canada Coding Challenge</title>
+  <!-- Don't alter slideshow.css, CSSS slide deck needs it to work
+  https://github.com/LeaVerou/csss -->
+  <link rel="stylesheet" href="framework/css/slideshow.css" data-noprefix>
+
+  <!-- Theme-specific styles -->
+  <!-- <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7CQuicksand%7CPacifico%7COpen+Sans:400italic,400,300' rel='stylesheet' type='text/css' data-noprefix> -->
+  <link rel="stylesheet" href="framework/css/font-awesome.min.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/fonts.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/highlightjs-themes/github.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/theme-llc.css" data-noprefix>
+  <link rel="shortcut icon" href="framework/img/favicon.ico">
+
+  <!-- Workshop-specific styles -->
+  <link rel="stylesheet" href="framework/css/workshop.css" data-noprefix>
+
+  <!-- Takes care of CSS3 prefixes! -->
+  <script src="framework/scripts/prefixfree.min.js"></script>
+
+  <!-- opens all links in a new window -->
+  <base target="_blank">
+</head>
+
+<!-- Timer/progress bar: Define the presentation duration using "data-duration" in minutes. -->
+
+<body class="en" data-duration="360">
+
+  <!-- Welcome slide -->
+  <header class="slide">
+    <img class="logo" src="framework/img/logo-llc-white.png" alt="Ladies Learning Code logo">
+    <h1>Skills Canada Coding Challenge!</h1>
+
+    <div class="instructions">
+      <!-- Add wifi info here -->
+      <!-- <h2>Get Connected</h2>
+      <p>Network: <br>
+      Password: </p>  -->
+
+
+      <h2>Download</h2>
+      <p>Learner files: <a href="https://bit.ly/2ucWpH5">https://bit.ly/2ucWpH5</a> (zip file)</p>
+      <ul>
+        <li>unzip the learner file download (<em>extract all</em> if you’re on a PC)</li>
+        <li>open <strong>slides.html</strong> in your browser to view the presentation</li>
+      </ul>
+
+    </div>
+
+  </header>
+
+  <main>
+    <!-- Instructor info -->
+    <section class="slide intro">
+      <img class="logo" src="framework/img/logo-llc-white.png" alt="Ladies Learning Code logo">
+      <div class="info">
+        <h1 class="heading-bg">
+          <span>Coding Challenge!</span>
+        </h1>
+        <!-- TODO: Fill in instructor details -->
+        <!--   <h2><span>with</span> Instructor Name</h2>
+
+      <img class="instructor-img" src="http://cl.ly/image/0r3Q3H110G36/profile-generic.jpg" alt="instructor name">
+      <ul>
+        <li><i class="fa fa-envelope"></i><a href="mailto:">hello@email.com</a></li>
+        <li><i class="fa fa-desktop"></i><a href="#">mywebsite.com</a></li>
+        <li><i class="fa fa-twitter"></i><a href="http://twitter.com/">@twitter</a></li>
+      </ul> -->
+
+      </div>
+    </section>
+
+
+    <section class="slide agenda" data-markdown>
+      <script type="text/template">
+        ## Agenda
+
+        **Morning**
+
+        * Turtle
+        * Conditionals
+        * Functions
+        * Random Function
+
+
+        **Afternoon**
+
+        * Challenge 1 - Error Correction
+        * Challenge 2 - Program
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## What is programming?
+
+          * Programming is basically giving instructions to your computer in a form that it can understand
+          * Computers need *very specific* instructions
+          * Programming languages have syntax, just like human languages have grammar rules
+        <br>
+        ### Why Python Is Awesome
+
+          *   Free!
+          *   Open source
+          *   Write once, run anywhere
+          *   Great community
+          *   The syntax looks similar to English
+          *   Meaningful errors, easy to debug
+
+      </script>
+    </section>
+
+    <section class="slide who-uses" data-markdown>
+      <script type="text/template">
+        ## Who uses Python?
+
+        * Data Analysis
+        * Scientific Computing
+        * Scripting
+        * Testing
+        * Web Applications (Django, Flask)
+        * and some of your favorite websites!
+        <!-- * Youtube, Reddit, Pinterest, Instagram, Dropbox, The Onion -->
+
+        ![](framework/img/workshop/logo-dropbox.png)
+        ![](framework/img/workshop/logo-instagram.png)
+        ![](framework/img/workshop/logo-pinterest.png)
+        ![](framework/img/workshop/logo-youtube.png)
+
+      </script>
+    </section>
+
+
+
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+        # Let&rsquo;s get started!
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      ## Development Environment
+
+      You will need:
+
+      1. **Google Chrome**
+      2. **Trinket website (https://trinket.io/python/33e5c3b81b)**
+
+
+    </section>
+
+
+
+
+    <!-- -------------------- -->
+    <!-- First Steps -->
+    <!-- -------------------- -->
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## What is turtle?
+
+        Turtle is a feature in Python that allows you to draw, write, and animate.
+
+        We will be using trinket to practice writing programs with Turtle.
+
+        Here is a snippet of code that implements Turtle:
+
+        <img src = "https://i.imgur.com/1hG5cuf.gif" alt = https://i.imgur.com/1hG5cuf.gif>
+
+        </script>
+    </section>
+
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Pro Tip! Use Comments
+
+        Programmers use *comments* to leave notes for themselves (and other people reading their code in the future)
+
+        Good comments add information that isn&rsquo;t immediately obvious.
+
+        You can also use comments to organize your code or to "hide" chunks of code you don't want to delete but are not ready to use yet. Feel free to add your own throughout the exercises!
+
+        Note the syntax below:
+
+          ```
+          # Python will ignore anything after the # symbol
+          ```
+          </script>
+    </section>
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Tina the Turtle
+
+        This program displays a turtle shape and a message.
+
+        `import` tells Python that we want to use the Turtle feature.
+
+        **Turtle** comes with many functions that tell the turtle what to do.
+
+        We can use functions to tell the **turtle** what to do, such as move forward, move backward, move fast or slow, or change colour.
+<br>
+<br>
+          <iframe src="https://trinket.io/embed/python/b1c45c6f91" width="100%" height="450" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Let's Make A Turtle!
+
+        We need to `import turtle`, create a new turtle and set the shape of our turtle.
+<br>
+<br>
+            <iframe src="https://trinket.io/embed/python/c32131a98c" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Color & Pen
+
+        **Color** allows you to change Tina's colour.
+        ```Python
+        tina.color("purple")
+        ```
+        Add this code to your program at line 5.
+
+        Try putting some other colors inside the `""` and see what happens.
+
+        <br>
+        Tina has a **Pen** that will draw the path that she travels on while `pendown()`.
+        While `penup()` lets Tina move around the screen without drawing her path.
+<br>
+<br>
+      <iframe src="https://trinket.io/embed/python/b337704798" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Make Tina Move!
+
+        We can make Tina move forward or backward using `tina.forward(50)` and `tina.backward(50)`.
+
+        Try changing the number inside the `()` and see what happens!
+
+        To turn Tina, try using `tina.left(90)` or `tina.right(90)`.
+
+        Here, the number inside the `()` represents the number of degrees Tina should turn.
+
+        We can also make Tina go to a specific spot on the screen by using the `tina.goto(100, 100)` Try changing these numbers to see where she goes!
+
+<br>
+<br>
+             <iframe src="https://trinket.io/embed/python/9b8439c9a9" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Make Tina Move!
+
+        **Challenge:** Make Tina go to (50, 50) then move her around to make a rectangle.
+
+        Use `tina.forward` and `tina.right` or `tina.left`
+
+        Make sure your pen is down!
+
+
+  <br>
+  <br>
+             <iframe src="https://trinket.io/embed/python/131a87f82c" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Say Hello!
+
+        The `write()` **function** outputs text to the screen.
+
+        <br>
+        Anything to be printed should be placed inside of brackets `()`.
+
+        All text should be in double quotations `""`.
+
+        ```
+        tina.write("Why, hello there!")
+        ```
+        You might find that your turtle is sitting on top of your message.
+        This can be fixed by moving your turtle forward a little, writing your message and then moving your turtle backwards.
+        Try it out!
+<br>
+<br>
+           <iframe src="https://trinket.io/embed/python/d239ae4b1f" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Input
+
+        Instead of Tina the Turtle displaying a message on the screen, take it one step further and have Tina say hello to anyone!
+
+        We will use the `input` function to get some data from the user (Us!).
+
+
+        1. We will give a message to the `input` function, so the user knows what data they should enter:
+          Make sure you put `""` around your message!
+
+          ```python
+          your_name = input("What's your name?")
+          ```
+
+
+        1. The user types a response and hits the **enter** key
+
+        1. Whatever the user entered is stored in a variable called `your_name`.
+
+        1. Next, we will use the `write` function and our variable `your_name` to write a message.
+
+          ```python
+          tina.write("Hi there, " + your_name + "!")
+          ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Let's try it!
+
+        Remember:
+
+        1. Give a message to the input function like this:
+
+          ```python
+          your_name = input("What's your name?")
+          ```
+
+        1. Write a message like this:
+
+          ```python
+          tina.write("Hi there, " + your_name + "!")
+          ```
+
+<br>
+<br>
+          <iframe src="https://trinket.io/embed/python/5263aed7aa" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Conditionals &amp; Logic
+        The program we just wrote ran straight from top to bottom.
+
+        But what if the program could decide what to do instead?
+
+        `if` statements can be used to execute different sets of instructions based on specific conditions.
+
+<br>
+        Each `if` statement contains a test. The indented block is the code that will run if the test is `True`.
+
+        Here's an example:
+
+        ```python
+            number = 2
+
+            if (number == 5):
+              tina.write("five")
+            elif (number == 3):
+              tina.write("three")
+            else:
+              tina.write("Number is not five or three")
+            ```
+
+          But what does this mean? Can you guess what Tina will write?
+
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Boolean values
+
+        First, we need to understand True and False.
+
+        How does `if` know what&rsquo;s `True` or `False`? We use 'Boolean' statements to test against the values.
+
+        We use a single equals sign (`=`) to *assign* a value to a variable.
+
+        ```python
+        >>> weather = "raining"
+        ```
+
+        We use the double equals symbol (`==`) to test if two values are the same.
+        ```
+        >>> weather == "cold"
+        True or False?
+        >>> weather == "raining"
+        True or False?
+        ```
+
+        **The difference between using (`=`) and (`==`) is *very* important!**
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Conditionals &amp; Logic Continued
+
+        ```python
+            number = 2
+
+            if (number == 5):
+              tina.write("five")
+            elif (number == 3):
+              tina.write("three")
+            else:
+              tina.write("Number is not five or three")
+            ```
+
+          1. First, we have a variable called `number`. What is the value of this variable?
+
+          1. Next, we have three tests:
+            1. if (number == 5):
+            1. elif (number == 2):
+            1. else:
+
+          1. We will test `(number == 5)` first. If this is true we will make Tina write `five` and STOP testing.
+
+          1. If this is false, we will test `(number == 3)`, if this is true we will make Tina write `three` and STOP testing.
+
+          1. If this is false, we have no more tests. We will make Tina write `Number is not five or three`
+          </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Conditionals &amp; Logic Continued
+        Let's do another example:
+
+        ```python
+            #Use the input function to ask the user "What's the temperature? hot, warm, or cold?"
+            temp = input("What's the temperature? (hot, warm or cold)")
+
+            if (temp == 'cold'):
+              tina.color('blue')
+              tina.write("Brrr! I'm freezing!")
+            elif (temp == 'warm'):
+              tina.color("green")
+              tina.write("This is perfect!")
+            elif (temp == 'hot'):
+              tina.color('red')
+              tina.write("Oh no! I got a sunburn!")
+            else:
+              tina.write("I'm so confused!!")
+            ```
+<br>
+<br>
+              <iframe src="https://trinket.io/embed/python/70ed5fd3f3" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+          </script>
+    </section>
+
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Functions
+
+        Functions are like recipes. A function is a set of instructions that will tell our turtle what to do.
+        We have already used some built in functions like `.shape` and `.forward`.
+
+        Can you think of any more turtle functions we have used today?
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Writing Functions
+
+        Let's try making our own function!
+
+        For this workshop, you won't have to worry about defining and calling your own fuctions.
+        Simply add in the instructions in the space indicated by the comments!
+
+        Let's add some instructions to make Tina draw a simple house with 4 walls and a roof:
+
+        To make Tina follow our `house` instructions we will need to include `house()` at the bottom of our code.
+
+        **Challenge:** Can you figure out how to draw a door on your house?
+<br>
+<br>
+            <iframe src="https://trinket.io/embed/python/25e0e88265" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Jumping Turtles!
+
+        Turtle also includes a feature that lets us interact with our turtle by clicking on it.
+        This function is called `onclick`
+
+        Let's write a function to make Tina "jump" when we click on her:
+
+
+
+<br>
+<br>
+            <iframe src="https://trinket.io/embed/python/3e53028721" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Make 5 cakes!
+
+        We can use functions to repeat complicated instructions without having to repeat ourselves in code!
+
+        If we want Tina to do the same activity many times, we can *call* the function using different x and y locations.
+
+        The program below will make three cakes. Can you make Tina draw 5? Can you make Tina draw 8?
+
+        Can you change the color by adding a color variable to the defined function?
+
+
+  <br>
+  <br>
+            <iframe src="https://trinket.io/embed/python/10420839a9" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      </script>
+    </section>
+
+
+
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Random
+
+        With Turtle, you can implement a *random number generator* that will provide the user with a *random number* within a given range.
+        <br>
+
+        This can be used to get the computer to pick a random element from a list, pick a random card from a deck, flip a coin, etc.
+
+        If we want a random integer, we can use the *randint* function from the *random* module.
+        <br>
+
+        *randint* accepts two parameters: the lowest(min) and the highest number(max).
+
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Random Example
+
+        In this example, the `randint()` function can be used to choose a number between `"0"` and `"5"` .
+        <br>
+        <br>
+        ```
+        import random
+        >>> print (random.randint(0, 5))
+
+        ```
+        <br>
+
+        This will ouput either 0, 1, 2, 3, 4 or 5
+
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Make Tina do some *random* moves
+
+        We want Tina to move around the screen randomly. To do this, we will use *random*
+        <br>
+        <br>
+        ```
+        import random
+        import Turtle
+
+        tina = turtle.Turtle()
+        def jump(x, y):
+          tina.left(random.randint(0, 360))
+
+        ```
+
+        Using the previous Trinket, let's implement random so that Tina moves in unexpected ways.
+        <br>
+        <br>
+          <iframe src="https://trinket.io/embed/python/3e53028721" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    </script>
+
+    </section>
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+        # Any Questions?
+
+
+      </script>
+    </section>
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+        # Lunch!
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## CHALLENGE (30 minutes)
+
+        You will receive a short piece of code.
+
+        This file has a 8 errors to be corrected and two short questions about conditionals.
+
+        Please identify as many errors as you can and write a comment to correct each error or explain why you think it is an error.
+
+        ```
+# Using the hashtag you can write a one line comment in Python
+
+        ```
+
+      </script>
+    </section>
+
+
+    <!-- Last slide -->
+
+    <section class="slide last">
+      <h2>Thank you!</h2>
+
+
+      <!-- <h3><span>with</span> Instructor Name</h3>
+
+       <img class="instructor-img" src="http://cl.ly/image/0r3Q3H110G36/profile-generic.jpg" alt="instructor name">
+      <ul>
+        <li><i class="fa fa-envelope"></i><a href="mailto:">hello@email.com</a></li>
+        <li><i class="fa fa-desktop"></i><a href="#">mywebsite.com</a></li>
+        <li><i class="fa fa-twitter"></i><a href="http://twitter.com/">@twitter</a></li>
+      </ul>
+ -->
+      <p class="attribution">Slide presentation created with <a href="https://github.com/LeaVerou/csss">Lea Verou&rsquo;s CSS-based SlideShow System</a> and <a href="http://lab.hakim.se/reveal-js/">reveal.js</a>.</p>
+    </section>
+
+  </main><!-- cls main section -->
+
+  <footer>
+    <p class="license"><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" src="framework/img/cc-by-nc.svg" /></a> by <a prefix="cc: http://creativecommons.org/ns#" href="http://ladieslearningcode.com" property="cc:attributionName" rel="cc:attributionURL">Brooke Snow & Kara Strickland</a></p>
+    <p class="instructions">Use the left <i class="fa fa-arrow-left"></i> and right <i class="fa fa-arrow-right"></i> arrow keys to navigate</p>
+  </footer>
+
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="framework/scripts/slideshow.js"></script>
+
+  <!-- Uncomment the plugins you need -->
+  <script src="framework/scripts/plugins/css-edit.js"></script>
+  <script src="framework/scripts/plugins/css-snippets.js"></script>
+  <script src="framework/scripts/plugins/css-controls.js"></script>
+  <!-- <script src="plugins/code-highlight.js"></script>-->
+
+  <script src="framework/scripts/plugins/markdown/marked.js"></script>
+  <script src="framework/scripts/plugins/markdown/markdown.js"></script>
+  <!-- <script src="framework/scripts/plugins/highlight/highlight.js"></script> -->
+  <script src="framework/scripts/plugins/highlight/highlight-8.4.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+
+  <script>
+    var slideshow = new SlideShow();
+
+    // Grabs all the .snippet elements
+    var snippets = document.querySelectorAll('.snippet');
+    for (var i = 0; i < snippets.length; i++) {
+      new CSSSnippet(snippets[i]);
+    }
+
+    // Adds "edit me" note to editable code areas
+    jQuery(document).ready(function() {
+      jQuery(".snippet").before("<span class=\"edit\">edit me</span>");
+    });
+  </script>
+</body>
+
+</html>
