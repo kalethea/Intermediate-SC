@@ -2,11 +2,7 @@
 
 ##Intro to Python
 
-A full day introductory Python workshop.
 
-Created by [Gabriel Gosselin](https://twitter.com/fggosselin) and [Darcie Milliken](https://twitter.com/derushie) for Ladies Learning Code.
-
-Email questions & comments to <content@ladieslearningcode.com>.
 
 ### Contributing
 
